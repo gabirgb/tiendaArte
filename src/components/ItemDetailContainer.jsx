@@ -32,7 +32,7 @@ export default function ItemDetailContainer() {
             <h2>{product.title}</h2>
             <hr />
             <img 
-                src={`https://placehold.co/200x200?text=${product.title}&font=roboto`} 
+                src={`${product.img}/?text=${product.title}&font=roboto`} 
                 alt={product.title} 
             />
             <p>Descripcion: {product.description}</p>

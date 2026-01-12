@@ -4,6 +4,10 @@ import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
 import { BrowserRouter, Routes, Route, Link } from "react-router"
 
+//TODO: volver a integrar {props.greetings}
+//TODO: volver a integrar cartWidget.jsx
+//TODO: aplicar estilos bootstrap a la navbar q se ve feucha
+
 function App() {
 
 

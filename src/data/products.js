@@ -1,230 +1,304 @@
-//aca vamos a crear la "db" con un arrary de prod, tb podría ser un archivo json. lo hago en archivo aparte para q sea más ordenado, reciuen para la ultima entrega vamos a usar db real.
 const products = [
     {
         id: 1,
-        title: "Xiaomi Redmi Note 13",
+        title: "obra en grafito abstracta",
         price: 299.9,
-        category: "xiaomi",
+        category: "grafito",
         stock: 15,
-        img: "https://i01.appmifile.com/webfile/globalimg/products/redmi-note-13-pro-plus.png",
-        description: "Smartphone Xiaomi Redmi Note 13."
+        img: "https://placehold.co/200x200",
+        color: "#f2f2f2",
+        description: "Composición en grafito con formas orgánicas y trazos superpuestos."
     },
     {
         id: 2,
-        title: "Samsung Galaxy S25",
-        price: 999.9,
-        category: "samsung",
-        stock: 20,
-        img: "https://images.samsung.com/is/image/samsung/p6pim/ar/s25/gallery.png",
-        description: "Samsung Galaxy S25 con cámara avanzada."
+        title: "collage urbano contemporáneo",
+        price: 450.0,
+        category: "collage",
+        stock: 10,
+        img: "https://placehold.co/200x200",
+        color: "#e0e0e0",
+        description: "Recortes de revistas y texturas urbanas integradas en una pieza dinámica."
     },
     {
         id: 3,
-        title: "Motorola Edge 50",
-        price: 549.9,
-        category: "motorola",
-        stock: 12,
-        img: "https://motorolaus.vtexassets.com/arquivos/ids/157008/motorola-edge-50.png",
-        description: "Motorola Edge 50 con pantalla OLED."
+        title: "pintura al óleo minimalista",
+        price: 799.5,
+        category: "pintura",
+        stock: 8,
+        img: "https://placehold.co/200x200",
+        color: "#d9c2a3",
+        description: "Paleta reducida y planos de color que enfatizan el vacío y la forma."
     },
     {
         id: 4,
-        title: "iPhone 15 Pro",
-        price: 1299.9,
-        category: "apple",
-        stock: 8,
-        img: "https://store.storeimages.cdn-apple.com/iphone-15-pro.png",
-        description: "iPhone 15 Pro con chip A17."
+        title: "print digital geométrico",
+        price: 199.9,
+        category: "print",
+        stock: 20,
+        img: "https://placehold.co/200x200",
+        color: "#c2c2c2",
+        description: "Diseño vectorial con patrones geométricos y contraste marcado."
     },
     {
         id: 5,
-        title: "HONOR Magic6",
-        price: 799.9,
-        category: "honor",
-        stock: 10,
-        img: "https://www.honor.com/content/dam/honor/global/product/magic6.png",
-        description: "HONOR Magic6 con diseño premium."
+        title: "grafito retrato expresivo",
+        price: 350.0,
+        category: "grafito",
+        stock: 12,
+        img: "https://placehold.co/200x200",
+        color: "#aaaaaa",
+        description: "Retrato en grafito con énfasis en luces y sombras dramáticas."
     },
     {
         id: 6,
-        title: "Samsung Galaxy Z Flip7",
-        price: 1499.9,
-        category: "samsung",
-        stock: 5,
-        img: "https://images.samsung.com/is/image/samsung/p6pim/ar/z-flip7/gallery.png",
-        description: "Galaxy Z Flip7 plegable."
+        title: "collage surrealista",
+        price: 520.0,
+        category: "collage",
+        stock: 7,
+        img: "https://placehold.co/200x200",
+        color: "#ffccaa",
+        description: "Elementos dispares combinados para crear una narrativa onírica."
     },
     {
         id: 7,
-        title: "Xiaomi 14 Ultra",
-        price: 1099.9,
-        category: "xiaomi",
-        stock: 7,
-        img: "https://i01.appmifile.com/webfile/globalimg/products/xiaomi-14-ultra.png",
-        description: "Xiaomi 14 Ultra con cámara Leica."
+        title: "pintura acrílica vibrante",
+        price: 680.0,
+        category: "pintura",
+        stock: 9,
+        img: "https://placehold.co/200x200",
+        color: "#ccffaa",
+        description: "Capas de acrílico con colores saturados y textura marcada."
     },
     {
         id: 8,
-        title: "Motorola Razr 50",
-        price: 1299.9,
-        category: "motorola",
-        stock: 6,
-        img: "https://motorolaus.vtexassets.com/arquivos/ids/157009/motorola-razr-50.png",
-        description: "Motorola Razr plegable."
+        title: "print tipográfico moderno",
+        price: 220.0,
+        category: "print",
+        stock: 25,
+        img: "https://placehold.co/200x200",
+        color: "#aaffcc",
+        description: "Composición tipográfica con jerarquías claras y estilo contemporáneo."
     },
     {
         id: 9,
-        title: "Samsung Galaxy A55",
-        price: 399.9,
-        category: "samsung",
-        stock: 25,
-        img: "https://images.samsung.com/is/image/samsung/p6pim/ar/a55/gallery.png",
-        description: "Samsung Galaxy A55 económico."
+        title: "grafito paisaje detallado",
+        price: 400.0,
+        category: "grafito",
+        stock: 11,
+        img: "https://placehold.co/200x200",
+        color: "#999999",
+        description: "Paisaje en grafito con atención minuciosa a texturas naturales."
     },
     {
         id: 10,
-        title: "iPhone 15",
-        price: 999.9,
-        category: "apple",
-        stock: 10,
-        img: "https://store.storeimages.cdn-apple.com/iphone-15.png",
-        description: "iPhone 15 con cámara dual."
+        title: "collage con recortes vintage",
+        price: 480.0,
+        category: "collage",
+        stock: 6,
+        img: "https://placehold.co/200x200",
+        color: "#ffeecc",
+        description: "Recortes retro y paleta cálida para una estética nostálgica."
     },
     {
         id: 11,
-        title: "Huawei P60 Pro",
-        price: 899.9,
-        category: "huawei",
-        stock: 9,
-        img: "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p60-pro.png",
-        description: "Huawei P60 Pro con cámara XMAGE."
+        title: "pintura óleo abstracta",
+        price: 720.0,
+        category: "pintura",
+        stock: 5,
+        img: "https://placehold.co/200x200",
+        color: "#ccddff",
+        description: "Gestos amplios y mezcla de óleo para una abstracción expresiva."
     },
     {
         id: 12,
-        title: "Oppo Find X7",
-        price: 799.9,
-        category: "oppo",
-        stock: 11,
-        img: "https://www.oppo.com/content/dam/oppo/product/find-x7.png",
-        description: "Oppo Find X7 con pantalla AMOLED."
+        title: "print monocromo minimalista",
+        price: 180.0,
+        category: "print",
+        stock: 30,
+        img: "https://placehold.co/200x200",
+        color: "#dddddd",
+        description: "Diseño en blanco y negro con énfasis en el espacio negativo."
     },
     {
         id: 13,
-        title: "Realme GT 6",
-        price: 699.9,
-        category: "realme",
+        title: "grafito figura humana",
+        price: 310.0,
+        category: "grafito",
         stock: 14,
-        img: "https://www.realme.com/global/product/gt6.png",
-        description: "Realme GT 6 con Snapdragon."
+        img: "https://placehold.co/200x200",
+        color: "#bbbbbb",
+        description: "Estudio anatómico en grafito con líneas precisas y volumen."
     },
     {
         id: 14,
-        title: "Vivo X100 Pro",
-        price: 899.9,
-        category: "vivo",
-        stock: 10,
-        img: "https://www.vivo.com/content/dam/vivo/global/product/x100-pro.png",
-        description: "Vivo X100 Pro con óptica Zeiss."
+        title: "collage experimental",
+        price: 530.0,
+        category: "collage",
+        stock: 8,
+        img: "https://placehold.co/200x200",
+        color: "#ffdddd",
+        description: "Superposición de materiales y texturas para un resultado disruptivo."
     },
     {
         id: 15,
-        title: "Samsung Galaxy M55",
-        price: 349.9,
-        category: "samsung",
-        stock: 18,
-        img: "https://images.samsung.com/is/image/samsung/p6pim/ar/m55/gallery.png",
-        description: "Samsung Galaxy M55 accesible."
+        title: "pintura acrílica paisaje",
+        price: 650.0,
+        category: "pintura",
+        stock: 10,
+        img: "https://placehold.co/200x200",
+        color: "#ddffaa",
+        description: "Paisaje con acrílico, pinceladas sueltas y atmósfera luminosa."
     },
     {
         id: 16,
-        title: "Xiaomi Poco F6",
-        price: 499.9,
-        category: "xiaomi",
-        stock: 20,
-        img: "https://i01.appmifile.com/webfile/globalimg/products/poco-f6.png",
-        description: "Xiaomi Poco F6 gamer."
+        title: "print colorido abstracto",
+        price: 210.0,
+        category: "print",
+        stock: 18,
+        img: "https://placehold.co/200x200",
+        color: "#aaddff",
+        description: "Formas orgánicas y paleta vibrante en impresión digital."
     },
     {
         id: 17,
-        title: "Motorola G85",
-        price: 299.9,
-        category: "motorola",
-        stock: 22,
-        img: "https://motorolaus.vtexassets.com/arquivos/ids/157010/motorola-g85.png",
-        description: "Motorola G85 económico."
+        title: "grafito boceto arquitectónico",
+        price: 370.0,
+        category: "grafito",
+        stock: 13,
+        img: "https://placehold.co/200x200",
+        color: "#cccccc",
+        description: "Estructuras y perspectivas en grafito con trazos técnicos."
     },
     {
         id: 18,
-        title: "iPhone SE (2025)",
-        price: 499.9,
-        category: "apple",
-        stock: 15,
-        img: "https://store.storeimages.cdn-apple.com/iphone-se.png",
-        description: "iPhone SE compacto."
+        title: "collage con texturas naturales",
+        price: 490.0,
+        category: "collage",
+        stock: 9,
+        img: "https://placehold.co/200x200",
+        color: "#ffeeaa",
+        description: "Papeles artesanales y fibras integradas en una composición orgánica."
     },
     {
         id: 19,
-        title: "HONOR X9b",
-        price: 399.9,
-        category: "honor",
-        stock: 17,
-        img: "https://www.honor.com/content/dam/honor/global/product/x9b.png",
-        description: "HONOR X9b resistente."
+        title: "pintura óleo retrato",
+        price: 780.0,
+        category: "pintura",
+        stock: 4,
+        img: "https://placehold.co/200x200",
+        color: "#aaffee",
+        description: "Retrato al óleo con modelado suave y mirada intensa."
     },
     {
         id: 20,
-        title: "Samsung Galaxy S24 Ultra",
-        price: 1199.9,
-        category: "samsung",
-        stock: 9,
-        img: "https://images.samsung.com/is/image/samsung/p6pim/ar/s24-ultra/gallery.png",
-        description: "Samsung Galaxy S24 Ultra."
+        title: "print geométrico en blanco y negro",
+        price: 190.0,
+        category: "print",
+        stock: 22,
+        img: "https://placehold.co/200x200",
+        color: "#eeeeee",
+        description: "Patrones geométricos en alto contraste para impacto visual."
     },
     {
         id: 21,
-        title: "Xiaomi Redmi 13C",
-        price: 199.9,
-        category: "xiaomi",
-        stock: 30,
-        img: "https://i01.appmifile.com/webfile/globalimg/products/redmi-13c.png",
-        description: "Xiaomi Redmi 13C básico."
+        title: "grafito retrato clásico",
+        price: 330.0,
+        category: "grafito",
+        stock: 16,
+        img: "https://placehold.co/200x200",
+        color: "#dddddd",
+        description: "Retrato tradicional con sombreado gradual y detalle fino."
     },
     {
         id: 22,
-        title: "Motorola Edge 40",
-        price: 499.9,
-        category: "motorola",
-        stock: 13,
-        img: "https://motorolaus.vtexassets.com/arquivos/ids/157011/motorola-edge-40.png",
-        description: "Motorola Edge 40."
+        title: "collage digital futurista",
+        price: 560.0,
+        category: "collage",
+        stock: 7,
+        img: "https://placehold.co/200x200",
+        color: "#ffccff",
+        description: "Capas digitales y motivos tecnológicos en una estética futurista."
     },
     {
         id: 23,
-        title: "Huawei Mate 60",
-        price: 999.9,
-        category: "huawei",
-        stock: 8,
-        img: "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/mate-60.png",
-        description: "Huawei Mate 60 con Kirin."
+        title: "pintura acrílica abstracta",
+        price: 700.0,
+        category: "pintura",
+        stock: 6,
+        img: "https://placehold.co/200x200",
+        color: "#ccffaa",
+        description: "Gestualidad y manchas de color que sugieren movimiento."
     },
     {
         id: 24,
-        title: "Oppo Reno 12",
-        price: 599.9,
-        category: "oppo",
-        stock: 16,
-        img: "https://www.oppo.com/content/dam/oppo/product/reno-12.png",
-        description: "Oppo Reno 12."
+        title: "print tipográfico colorido",
+        price: 230.0,
+        category: "print",
+        stock: 28,
+        img: "https://placehold.co/200x200",
+        color: "#aaffdd",
+        description: "Tipografías combinadas con paleta alegre y jerarquías claras."
     },
     {
         id: 25,
-        title: "Realme Narzo 70",
-        price: 249.9,
-        category: "realme",
-        stock: 21,
-        img: "https://www.realme.com/global/product/narzo-70.png",
-        description: "Realme Narzo 70."
+        title: "grafito paisaje urbano",
+        price: 360.0,
+        category: "grafito",
+        stock: 12,
+        img: "https://placehold.co/200x200",
+        color: "#bbbbbb",
+        description: "Escena citadina en grafito con enfoque en arquitectura y tránsito."
+    },
+    {
+        id: 26,
+        title: "collage con elementos tipográficos",
+        price: 510.0,
+        category: "collage",
+        stock: 8,
+        img: "https://placehold.co/200x200",
+        color: "#ffeeee",
+        description: "Letras recortadas y símbolos integrados en una composición dinámica."
+    },
+    {
+        id: 27,
+        title: "pintura óleo paisaje marino",
+        price: 820.0,
+        category: "pintura",
+        stock: 5,
+        img: "https://placehold.co/200x200",
+        color: "#aaddcc",
+        description: "Mar y cielo en óleo con veladuras y profundidad cromática."
+    },
+    {
+        id: 28,
+        title: "print abstracto monocromo",
+        price: 200.0,
+        category: "print",
+        stock: 24,
+        img: "https://placehold.co/200x200",
+        color: "#cccccc",
+        description: "Formas abstractas en escala de grises con textura sutil."
+    },
+    {
+        id: 29,
+        title: "grafito estudio de manos",
+        price: 340.0,
+        category: "grafito",
+        stock: 10,
+        img: "https://placehold.co/200x200",
+        color: "#cfcfcf",
+        description: "Serie de manos en distintas poses con detalle anatómico."
+    },
+    {
+        id: 30,
+        title: "collage botánico",
+        price: 540.0,
+        category: "collage",
+        stock: 9,
+        img: "https://placehold.co/200x200",
+        color: "#e6ffcc",
+        description: "Hojas y flores recortadas combinadas con texturas naturales."
     }
 ]
-// tambien tengo q exportar esdte archivo porque sino me queda incomunicado (en javascript necesito export/import)
-export default products; 
+
+export default products
