@@ -6,7 +6,7 @@ const products = [
         category: "grafito",
         stock: 15,
         img: "https://placehold.co/200x200",
-        color: "#f2f2f2",
+        color: "699694",
         description: "Composición en grafito con formas orgánicas y trazos superpuestos."
     },
     {
@@ -16,7 +16,7 @@ const products = [
         category: "collage",
         stock: 10,
         img: "https://placehold.co/200x200",
-        color: "#e0e0e0",
+        color: "e0e0e0",
         description: "Recortes de revistas y texturas urbanas integradas en una pieza dinámica."
     },
     {
@@ -26,7 +26,7 @@ const products = [
         category: "pintura",
         stock: 8,
         img: "https://placehold.co/200x200",
-        color: "#d9c2a3",
+        color: "d9c2a3",
         description: "Paleta reducida y planos de color que enfatizan el vacío y la forma."
     },
     {
@@ -36,7 +36,7 @@ const products = [
         category: "print",
         stock: 20,
         img: "https://placehold.co/200x200",
-        color: "#c2c2c2",
+        color: "c2c2c2",
         description: "Diseño vectorial con patrones geométricos y contraste marcado."
     },
     {
@@ -46,7 +46,7 @@ const products = [
         category: "grafito",
         stock: 12,
         img: "https://placehold.co/200x200",
-        color: "#aaaaaa",
+        color: "aaaaaa",
         description: "Retrato en grafito con énfasis en luces y sombras dramáticas."
     },
     {
@@ -56,7 +56,7 @@ const products = [
         category: "collage",
         stock: 7,
         img: "https://placehold.co/200x200",
-        color: "#ffccaa",
+        color: "ffccaa",
         description: "Elementos dispares combinados para crear una narrativa onírica."
     },
     {
@@ -66,7 +66,7 @@ const products = [
         category: "pintura",
         stock: 9,
         img: "https://placehold.co/200x200",
-        color: "#ccffaa",
+        color: "ccffaa",
         description: "Capas de acrílico con colores saturados y textura marcada."
     },
     {
@@ -76,7 +76,7 @@ const products = [
         category: "print",
         stock: 25,
         img: "https://placehold.co/200x200",
-        color: "#aaffcc",
+        color: "aaffcc",
         description: "Composición tipográfica con jerarquías claras y estilo contemporáneo."
     },
     {
@@ -86,7 +86,7 @@ const products = [
         category: "grafito",
         stock: 11,
         img: "https://placehold.co/200x200",
-        color: "#999999",
+        color: "999999",
         description: "Paisaje en grafito con atención minuciosa a texturas naturales."
     },
     {
@@ -96,7 +96,7 @@ const products = [
         category: "collage",
         stock: 6,
         img: "https://placehold.co/200x200",
-        color: "#ffeecc",
+        color: "ffeecc",
         description: "Recortes retro y paleta cálida para una estética nostálgica."
     },
     {
@@ -106,7 +106,7 @@ const products = [
         category: "pintura",
         stock: 5,
         img: "https://placehold.co/200x200",
-        color: "#ccddff",
+        color: "ccddff",
         description: "Gestos amplios y mezcla de óleo para una abstracción expresiva."
     },
     {
@@ -116,7 +116,7 @@ const products = [
         category: "print",
         stock: 30,
         img: "https://placehold.co/200x200",
-        color: "#dddddd",
+        color: "dddddd",
         description: "Diseño en blanco y negro con énfasis en el espacio negativo."
     },
     {
@@ -126,7 +126,7 @@ const products = [
         category: "grafito",
         stock: 14,
         img: "https://placehold.co/200x200",
-        color: "#bbbbbb",
+        color: "bbbbbb",
         description: "Estudio anatómico en grafito con líneas precisas y volumen."
     },
     {
@@ -136,7 +136,7 @@ const products = [
         category: "collage",
         stock: 8,
         img: "https://placehold.co/200x200",
-        color: "#ffdddd",
+        color: "ffdddd",
         description: "Superposición de materiales y texturas para un resultado disruptivo."
     },
     {
@@ -146,7 +146,7 @@ const products = [
         category: "pintura",
         stock: 10,
         img: "https://placehold.co/200x200",
-        color: "#ddffaa",
+        color: "ddffaa",
         description: "Paisaje con acrílico, pinceladas sueltas y atmósfera luminosa."
     },
     {
@@ -156,7 +156,7 @@ const products = [
         category: "print",
         stock: 18,
         img: "https://placehold.co/200x200",
-        color: "#aaddff",
+        color: "aaddff",
         description: "Formas orgánicas y paleta vibrante en impresión digital."
     },
     {
@@ -166,7 +166,7 @@ const products = [
         category: "grafito",
         stock: 13,
         img: "https://placehold.co/200x200",
-        color: "#cccccc",
+        color: "cccccc",
         description: "Estructuras y perspectivas en grafito con trazos técnicos."
     },
     {
@@ -176,7 +176,7 @@ const products = [
         category: "collage",
         stock: 9,
         img: "https://placehold.co/200x200",
-        color: "#ffeeaa",
+        color: "ffeeaa",
         description: "Papeles artesanales y fibras integradas en una composición orgánica."
     },
     {
@@ -186,7 +186,7 @@ const products = [
         category: "pintura",
         stock: 4,
         img: "https://placehold.co/200x200",
-        color: "#aaffee",
+        color: "aaffee",
         description: "Retrato al óleo con modelado suave y mirada intensa."
     },
     {
@@ -196,7 +196,7 @@ const products = [
         category: "print",
         stock: 22,
         img: "https://placehold.co/200x200",
-        color: "#eeeeee",
+        color: "eeeeee",
         description: "Patrones geométricos en alto contraste para impacto visual."
     },
     {
@@ -206,7 +206,7 @@ const products = [
         category: "grafito",
         stock: 16,
         img: "https://placehold.co/200x200",
-        color: "#dddddd",
+        color: "dddddd",
         description: "Retrato tradicional con sombreado gradual y detalle fino."
     },
     {
@@ -216,7 +216,7 @@ const products = [
         category: "collage",
         stock: 7,
         img: "https://placehold.co/200x200",
-        color: "#ffccff",
+        color: "ffccff",
         description: "Capas digitales y motivos tecnológicos en una estética futurista."
     },
     {
@@ -226,7 +226,7 @@ const products = [
         category: "pintura",
         stock: 6,
         img: "https://placehold.co/200x200",
-        color: "#ccffaa",
+        color: "ccffaa",
         description: "Gestualidad y manchas de color que sugieren movimiento."
     },
     {
@@ -236,7 +236,7 @@ const products = [
         category: "print",
         stock: 28,
         img: "https://placehold.co/200x200",
-        color: "#aaffdd",
+        color: "aaffdd",
         description: "Tipografías combinadas con paleta alegre y jerarquías claras."
     },
     {
@@ -246,7 +246,7 @@ const products = [
         category: "grafito",
         stock: 12,
         img: "https://placehold.co/200x200",
-        color: "#bbbbbb",
+        color: "bbbbbb",
         description: "Escena citadina en grafito con enfoque en arquitectura y tránsito."
     },
     {
@@ -256,7 +256,7 @@ const products = [
         category: "collage",
         stock: 8,
         img: "https://placehold.co/200x200",
-        color: "#ffeeee",
+        color: "ffeeee",
         description: "Letras recortadas y símbolos integrados en una composición dinámica."
     },
     {
@@ -266,7 +266,7 @@ const products = [
         category: "pintura",
         stock: 5,
         img: "https://placehold.co/200x200",
-        color: "#aaddcc",
+        color: "aaddcc",
         description: "Mar y cielo en óleo con veladuras y profundidad cromática."
     },
     {
@@ -276,7 +276,7 @@ const products = [
         category: "print",
         stock: 24,
         img: "https://placehold.co/200x200",
-        color: "#cccccc",
+        color: "cccccc",
         description: "Formas abstractas en escala de grises con textura sutil."
     },
     {
@@ -286,7 +286,7 @@ const products = [
         category: "grafito",
         stock: 10,
         img: "https://placehold.co/200x200",
-        color: "#cfcfcf",
+        color: "cfcfcf",
         description: "Serie de manos en distintas poses con detalle anatómico."
     },
     {
@@ -296,7 +296,7 @@ const products = [
         category: "collage",
         stock: 9,
         img: "https://placehold.co/200x200",
-        color: "#e6ffcc",
+        color: "e6ffcc",
         description: "Hojas y flores recortadas combinadas con texturas naturales."
     }
 ]

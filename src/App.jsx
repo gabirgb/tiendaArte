@@ -5,11 +5,13 @@ import NavBar from "./components/NavBar"
 import { BrowserRouter, Routes, Route, Link } from "react-router"
 
 //TODO: volver a integrar {props.greetings}
-//TODO: volver a integrar cartWidget.jsx
-//TODO: aplicar estilos bootstrap a la navbar q se ve feucha
+////volver a integrar cartWidget.jsx
+//TODO: corregir estilos bootstrap a la navbar q se ven los elementos despeinados
+//TODO: hacer funcional el buscador
+////poner "cargando" en el detalle del producto
+//TODO: validar la suma/resta de elementos en ItemCount.jsx
 
 function App() {
-
 
   return (
     // navegacion
@@ -19,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
 
-        <Route path="/aboutus" element={<h3>Hola somos nosotros</h3>} />
+        <Route path="/nosotros" element={<h3>Hola somos nosotros</h3>} />
 
         <Route path="/producto/:itemId" element={<ItemDetailContainer />} />
         
