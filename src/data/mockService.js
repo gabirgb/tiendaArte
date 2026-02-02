@@ -28,7 +28,7 @@ export function getItemData(itemId) {
             // Simulamos delay de 5 segundo
             setTimeout(() => {
                 resolve(itemRequested);
-            }, 5000);
+            }, 1000);
         } catch (error) {
             // Si ocurre algún error inesperado
             reject(error);

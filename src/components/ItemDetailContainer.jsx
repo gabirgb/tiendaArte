@@ -4,12 +4,37 @@ import ItemCount from './ItemCount'
 import { useParams } from 'react-router'
 //* named export/ import xq tengo más de 1 f en mockservice
 import { getItemData } from '../data/mockService'
+// siempre voy a tener 2 import de context porque uno es la conexción (useContext) y el otro es el contexto al que me quiero conectar (cartContext)
+import { useContext } from 'react';
+import cartContext from "../context/cartContext"
+
+//! Hooks personalizados
+/* puedo reemplazar estas 2 líneas si en cartContext.jsx creo un hook personalizado que me combine el useContext con el contexto en cuestión: useContext (cartContext)
+Seria algo como agregar al final (googlear q es facil hacerlo):
+export useCartContext()
+y aca solo haría un import:
+import { useCartContext } from "../context/cartContext.jsx"
+*/ 
 
 export default function ItemDetailContainer() {
     const {itemId} = useParams()
     const [product, setProduct] = useState({})
-    // creo una flag para evaluar el estado de la peticion
+    /* //! creo el context,
+    que va a ser el mismo value (un objeto) que el <DefaultContextProvider> que tengo en cartContext.jsx
+    - en este componente no necesito a cart, solo addItemToCart, entonces vinculo directamente el valor de esa propiedad asi importo solamente lo que necesito:
+    const context = useContext(cartContext).addItemToCart
+    - tambien lo puedo hacer con propr desestructurando el objeto, como lo hicimos con otros elementos:
+    */
+   //TODO: ** ACA
+    const {addItemToCart, removeItemFromCart} = useContext(cartContext)
+
+    //reo una flag para evaluar el estado de la peticion
     const [loading, setLoading] = useState(true)
+
+    function onAddToCart(count) {
+        alert("Agregando " + count + " items")
+        addItemToCart(product, count)
+    }
 
     useEffect(() => {
         setLoading(true)
@@ -30,7 +55,7 @@ export default function ItemDetailContainer() {
                         <p><strong>Descripcion:</strong></p>
                         <p><strong>Categoría:</strong></p>
                         <h4><strong>Precio:</strong></h4>
-                        <ItemCount />
+                       <ItemCount />
                     </div>
                 </div>
              ) : (
@@ -46,7 +71,15 @@ export default function ItemDetailContainer() {
                         <p><strong>Descripcion:</strong> {product.description}</p>
                         <p><strong>Categoría:</strong> {product.category}</p>
                         <h4><strong>Precio:</strong> ${product.price}</h4>
-                        <ItemCount />
+                        {/* <ItemCount>
+                        // TODO pasar por props STOCK como val maximo.
+                        1. le asigno un evento "onAddToCart"
+                        2. cuando en <ItemCount> se ejecuta el evento le digo que tienen que llamar a una f. 
+                        3. cuando el boton recibe clic se llama a la f addToCart, es decir: le delego al botón "agregar al carrito" la decisión de cuándo se debe llamar a la f addToCart
+                        */}
+                        <ItemCount onAddToCart={onAddToCart}/>
+                        {/* provisoriamente vamos a poner un boton aca para testear el removeItemFromCart, eso luego va a estar en la pag del carrito. */}
+                        <button onClick={ () => removeItemFromCart(product.id)}>Eliminar</button>
                     </div>
                 </div>
              ) 
