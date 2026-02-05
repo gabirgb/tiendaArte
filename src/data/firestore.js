@@ -5,16 +5,7 @@
 import { initializeApp } from "firebase/app";
 // nos conectamos a firestore
 import { collection, doc, getDocs, getDoc, getFirestore, query, where, addDoc } from "firebase/firestore";
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyCjpRfEbBgw7_4hbRT7jHzY4WYcyo94jKQ",
-    authDomain: "tiendaarte-cf713.firebaseapp.com",
-    projectId: "tiendaarte-cf713",
-    storageBucket: "tiendaarte-cf713.firebasestorage.app",
-    messagingSenderId: "855483804360",
-    appId: "1:855483804360:web:8e5207cb295a4ea7fe93fd"
-};
+import firebaseConfig from "../js/config";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
