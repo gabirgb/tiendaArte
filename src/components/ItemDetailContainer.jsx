@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import ItemCount from './ItemCount'
 import { useParams } from 'react-router'
 //* named export/ import xq tengo más de 1 f en mockservice
-import { getItemData } from '../data/mockService'
+import { getItemData } from '../data/firestore'
 // siempre voy a tener 2 import de context porque uno es la conexción (useContext) y el otro es el contexto al que me quiero conectar (cartContext)
 import { useContext } from 'react';
 import cartContext from "../context/cartContext"
@@ -41,7 +41,7 @@ export default function ItemDetailContainer() {
         getItemData(itemId)
             .then(response => setProduct(response))
             .finally(() => setLoading(false))
-    }, [product]) // actualizo el estado en funcion del estado product
+    }, [itemId]) // actualizo el estado en funcion del itemId
 
     return (
         <section>

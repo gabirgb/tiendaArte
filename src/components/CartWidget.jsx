@@ -3,6 +3,7 @@
 import { useContext } from "react"
 //import named: importo cartContext.jsx
 import cartContext from "../context/cartContext";
+import { Link } from "react-router";
 
 export default function CartWidget () {
     /** Para consumir usamos createContext() (es una f de react)

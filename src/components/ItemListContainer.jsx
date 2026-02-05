@@ -1,7 +1,6 @@
 // Listado de productos
 import Item from "./Item"
-import getData from "../data/mockService"
-import {getCategoryData} from "../data/mockService"
+import { getData, getCategoryData } from "../data/firestore"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 
@@ -14,6 +13,7 @@ export default function ItemListContainer(props) {
        if (categoryId) {
             getCategoryData(categoryId).then( (response) => {
                setProducts(response)
+               console.log("response: " + response + " - categid: " + categoryId)
            }).catch( (err)=>{
                alert(err)
            })
