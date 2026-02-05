@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # Propios
-exportProductsToFirebase.js
+./js/exportProductsToFirebase.js
 config.js
+App-clase06.md
