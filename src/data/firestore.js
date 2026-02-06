@@ -10,7 +10,7 @@ import firebaseConfig from "../js/config";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // inicializo db
-const db = getFirestore(app)
+const db = getFirestore(app);
 
 // rehago todas las f que hice en el mockservices con el mismo nombre asi es facil de reemplazar.
 // getData() - recupero todos los documentos de firestore
@@ -21,6 +21,11 @@ export async function getData() {
     const collectionRef = collection(db, "products")
     // obtengo un snapshot del estado actual de la db
     // (pido un snapshot de los docs de la coleccion products que está en la db)
+    //TODO: acá debería traerme solamente los productos que tienen stock
+    /* deberia crear una query como:
+    const q = query(collectionRef, where("stock", "!==", 0))
+    const productsSnapshot = await getDocs(q)
+    */
     const productsSnapshot = await getDocs(collectionRef)
     //console.log("productsSnapshot: " + productsSnapshot)
     //guardo el array de productos q recibo

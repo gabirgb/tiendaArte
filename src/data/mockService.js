@@ -6,7 +6,7 @@ function getData() {
         console.log("Solicitando datos...")
         setTimeout(() => { resolve(products) }, 1000)
     })
-    return promiseData
+    return promiseData;
 }
 
 

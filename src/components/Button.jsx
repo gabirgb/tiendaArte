@@ -1,18 +1,15 @@
 export default function Button(props) {
-    const [ colorFondo, setColorFondo ] = useState("Red")
+  const [colorFondo, setColorFondo] = useState("Red");
 
-    function handleChangeColor() {
-        setColorFondo("Blue")
-    }
+  function handleChangeColor() {
+    setColorFondo("Blue");
+  }
 
-    return (
-        <>
-        <button
-        onClick={handleChangeColor}
-        style={{backgroundColor: colorFondo}}
-        > 
+  return (
+    <>
+      <button onClick={handleChangeColor} style={{ backgroundColor: colorFondo }}>
         {props.label}
-        </button>
-        </>
-    )
+      </button>
+    </>
+  );
 }

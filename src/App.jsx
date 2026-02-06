@@ -17,8 +17,6 @@ import { getData } from "./data/firestore.js";
 //TODO: vaciar carrito de compra una vez que se envio la orden
 //TODO: validar que el carrito no esté vacío antes de enviar una oc
 //TODO: paginar itemList - limit() y startAfter()
-//TODO Crear readMe.md
-//TODO ver como crear un archivo de config con los datos q no hay q subir a github
 
 function App() {
   getData();
