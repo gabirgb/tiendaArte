@@ -25,5 +25,5 @@ dist-ssr
 
 # Propios
 src/js/exportProductsToFirebase.js
-src/js/config.js
+src/js/config.local.js
 src/App-clase06.md
