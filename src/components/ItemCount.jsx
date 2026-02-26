@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 // acá recibo la f como prop
+//TODO: necesito recibir max stock
 export default function ItemCount(props) {
   // El valor iniciar siempre es 1, que es el minimo q el usuario puede tener en su carrito, si no no se muestra el item en el carrito.
   const [count, setCount] = useState(1);

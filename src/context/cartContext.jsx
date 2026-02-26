@@ -63,7 +63,7 @@ export function CartProvider({ children }) {
     return total;
   }
 
-  function countToTalPrice() {
+  function countTotalPrice() {
     //TODO
     //lo vamos a usar en el checkout
   }

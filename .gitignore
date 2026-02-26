@@ -27,3 +27,4 @@ dist-ssr
 src/js/exportProductsToFirebase.js
 src/js/config.local.js
 src/App-clase06.md
+src/components/Button.jsx

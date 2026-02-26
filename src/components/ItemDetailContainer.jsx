@@ -1,6 +1,6 @@
 // Detalle de producto
-import { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 //* named export/ import xq tengo más de 1 f en mockservice
 import { getItemData } from "../data/firestore";
